@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.TaskActivity">
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="?attr/colorPrimary"
+        android:onClick="homeClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/taskImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/homeImageView"
+        android:background="@color/colorPrimaryDark"
+        android:padding="25dp"
+        app:srcCompat="@drawable/status" />
+
+    <ImageView
+        android:id="@+id/helpImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/taskImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="helpClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/helpImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="profileClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/myLaundry"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:text="My Laundry"
+
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textColorHint="#3f51b5"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/onprogressTextView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myLaundry"
+        android:layout_toLeftOf="@+id/helpImageView"
+        android:layout_toStartOf="@+id/helpImageView"
+        android:background="@drawable/square_border"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:text="On Progress"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/historyTextView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myLaundry"
+        android:layout_toEndOf="@+id/onprogressTextView"
+        android:layout_toRightOf="@+id/onprogressTextView"
+        android:background="@drawable/square_border"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:text="History"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onprogressTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="128dp"
+        app:srcCompat="@drawable/cart" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Whoops. Currently you don't have any order on progress"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/createOrder"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/Help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/image_border"
+        android:fontFamily="sans-serif"
+
+        android:onClick="backHome"
+        android:text="CREATE ORDER"
+        android:textColor="#3F51B5"
+        android:textColorHint="#3f51b5"
+        android:typeface="monospace" />
+
+</RelativeLayout>

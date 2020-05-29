@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.TaskActivity">
+
+
+    <TextView
+        android:id="@+id/quickText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:text="QUICK CLEANING"
+        android:textColor="@color/colorPrimary"
+        android:textSize="10pt"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/minButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quickText"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/image_border"
+        app:srcCompat="@drawable/min" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/quickText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quickText"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/image_border"
+        app:srcCompat="@drawable/tambah" />
+
+    <TextView
+        android:id="@+id/estText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimation : 1-2 Days"
+        android:typeface="monospace"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/jumlah"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="8pt"/>
+
+    <Button
+    android:id="@+id/addButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ADD TO BAG"
+    android:fontFamily="sans-serif"
+    android:typeface="monospace"
+    android:textColor="#ffff"
+    android:background="@color/colorPrimary"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/estText"/>
+
+</RelativeLayout>

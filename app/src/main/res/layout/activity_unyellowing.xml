@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.TaskActivity">
+
+
+    <TextView
+        android:id="@+id/quickText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNYELLOWING"
+        android:textColor="@color/colorPrimary"
+        android:typeface="monospace"
+        android:fontFamily="sans-serif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="10pt"/>
+
+    <ImageButton
+        android:id="@+id/minButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/min"
+        android:background="@drawable/image_border"
+        android:layout_centerHorizontal="false"
+        android:layout_below="@id/quickText"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="70dp"/>
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/quickText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center" />
+    <ImageButton
+        android:id="@+id/plusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/tambah"
+        android:background="@drawable/image_border"
+        android:layout_centerHorizontal="false"
+        android:layout_below="@id/quickText"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="290dp"/>
+
+    <TextView
+        android:id="@+id/estText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimation : 1-2 Days"
+        android:typeface="monospace"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/deepCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="8pt"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD TO BAG"
+        android:fontFamily="sans-serif"
+        android:typeface="monospace"
+        android:textColor="#ffff"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/estText"/>
+
+    <CheckBox
+        android:id="@+id/deepCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Deep Cleaning"
+        android:layout_below="@id/quickCheckBox"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/colorPrimary"
+        android:typeface="monospace"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:textSize="6pt"
+        android:buttonTint="@color/colorPrimary"
+        />
+    <CheckBox
+        android:id="@+id/quickCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Quick Cleaning"
+        android:layout_below="@id/extraText"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="80dp"
+        android:textColor="@color/colorPrimary"
+        android:typeface="monospace"
+        android:fontFamily="sans-serif"
+        android:textSize="6pt"
+        android:layout_marginTop="10dp"
+        android:buttonTint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/extraText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Treatment:"
+        android:layout_below="@id/jumlah"
+        android:textColor="@color/colorPrimary"
+        android:typeface="monospace"
+        android:fontFamily="sans-serif"
+        android:layout_marginLeft="110dp"
+        android:textSize="8pt"
+        android:layout_marginTop="40dp"
+        />
+</RelativeLayout>

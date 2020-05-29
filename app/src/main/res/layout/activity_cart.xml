@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.Cart">
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Order Confirmation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView21"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="61dp"
+        android:text="Pick-up Address" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView22"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="42dp"
+        android:text="Your Orders"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/textView23"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/textView23"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/square_border"
+        app:srcCompat="?android:attr/windowBackground" />
+
+    <TextView
+        android:id="@+id/minButton1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/square_border"
+        android:text="-"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/plusButton1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/qty1"
+        android:layout_toEndOf="@+id/qty1"
+        android:layout_toRightOf="@+id/qty1"
+        android:background="@drawable/square_border"
+        android:text="+"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/qty1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/minButton1"
+        android:layout_toEndOf="@+id/minButton1"
+        android:layout_toRightOf="@+id/minButton1"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView21"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_alignTop="@+id/plusButton1"
+        android:text="Quick Cleaning" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:text="Notes"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/RpTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/plusButton1"
+        android:layout_toEndOf="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:text="Rp " />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/RpTextView1"
+        android:layout_toEndOf="@+id/textView43"
+        android:layout_toRightOf="@+id/textView43"
+        android:text="40000" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_below="@+id/imageView5"
+        android:background="@drawable/square_border"
+        app:srcCompat="?android:attr/windowBackground" />
+
+    <TextView
+        android:id="@+id/minButton2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/minButton1"
+        android:layout_alignStart="@+id/minButton1"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/square_border"
+        android:text="-"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/plusButton2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/qty2"
+        android:layout_toEndOf="@+id/qty2"
+        android:layout_toRightOf="@+id/qty2"
+        android:background="@drawable/square_border"
+        android:text="+"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/qty2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/minButton2"
+        android:layout_toEndOf="@+id/minButton2"
+        android:layout_toRightOf="@+id/minButton2"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView27"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_alignTop="@+id/plusButton2"
+        android:text="Deep Cleaning" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView34"
+        android:layout_alignStart="@+id/textView34"
+        android:layout_below="@+id/textView34"
+        android:text="Notes"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/RpTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView35"
+        android:layout_alignLeft="@+id/RpTextView1"
+        android:layout_alignStart="@+id/RpTextView1"
+        android:text="Rp " />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plusButton2"
+        android:layout_alignBottom="@+id/plusButton2"
+        android:layout_alignLeft="@+id/price1"
+        android:layout_alignStart="@+id/price1"
+        android:text="50000" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView10"
+        android:layout_alignStart="@+id/imageView10"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="60dp"
+        android:text="Delivery Address" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_below="@+id/textView36"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText6"
+        android:layout_alignStart="@+id/editText6"
+        android:layout_below="@+id/editText6"
+        android:layout_marginTop="39dp"
+        android:text="Payment Details"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView37"
+        android:layout_alignStart="@+id/textView37"
+        android:layout_below="@+id/textView37"
+        android:layout_marginTop="14dp"
+        android:text="SubTotal" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView38"
+        android:layout_alignStart="@+id/textView38"
+        android:layout_below="@+id/textView38"
+        android:layout_marginTop="6dp"
+        android:text="Shipping Fee" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_below="@+id/textView39"
+        android:layout_marginTop="6dp"
+        android:text="Total Discount" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView40"
+        android:layout_alignStart="@+id/textView40"
+        android:layout_below="@+id/textView40"
+        android:layout_marginTop="23dp"
+        android:text="TOTAL PRICE"
+        android:textSize="15sp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/subTotalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView39"
+        android:layout_alignLeft="@+id/RpTextView2"
+        android:layout_alignStart="@+id/RpTextView2"
+        android:text="Rp " />
+
+    <TextView
+        android:id="@+id/subTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/subTotalText"
+        android:layout_toEndOf="@+id/textView43"
+        android:layout_toRightOf="@+id/textView43"
+        android:text="90000" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView40"
+        android:layout_alignLeft="@+id/subTotalText"
+        android:layout_alignStart="@+id/subTotalText"
+        android:text="Rp 0" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView43"
+        android:layout_alignStart="@+id/textView43"
+        android:layout_alignTop="@+id/textView40"
+        android:text="Rp 0" />
+
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView44"
+        android:layout_alignStart="@+id/textView44"
+        android:layout_alignTop="@+id/textView41"
+        android:text="Rp "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalPriceText"
+        android:layout_alignBottom="@+id/totalPriceText"
+        android:layout_toEndOf="@+id/textView44"
+        android:layout_toRightOf="@+id/textView44"
+        android:text="90000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/makeOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/estText"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif"
+        android:onClick="makeOrder"
+        android:text="MAKE AN ORDER"
+        android:textColor="#ffff"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="10dp"
+
+        android:layout_toLeftOf="@+id/RpTextView2"
+        android:layout_toStartOf="@+id/RpTextView2"
+        android:background="@drawable/image_border"
+        android:fontFamily="sans-serif"
+        android:onClick="checkOut"
+        android:text="ADD MORE ITEMS"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="14sp"
+        android:typeface="monospace" />
+
+</RelativeLayout>

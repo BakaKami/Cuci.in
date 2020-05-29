@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="com.example.master.cuciin.HelpActivity">
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="?attr/colorPrimary"
+        android:onClick="homeClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/taskImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/homeImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="taskClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/status" />
+
+    <ImageView
+        android:id="@+id/helpImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/taskImageView"
+        android:background="@color/colorPrimaryDark"
+        android:padding="25dp"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/helpImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="profileClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/Help"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:text="Help"
+
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textColorHint="#3f51b5"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <ImageView
+        android:id="@+id/cust"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/support2"
+        android:layout_below="@id/Help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cust"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Contact Us on \n 081234121234"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

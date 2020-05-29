@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="?attr/colorPrimary"
+        android:onClick="homeClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/taskImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/homeImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="taskClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/status" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/helpImageView"
+        android:background="@color/colorPrimaryDark"
+        android:padding="25dp"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/helpImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/taskImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="helpClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/help" />
+
+    <TextView
+        android:id="@+id/profileSettingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profileImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/profileImage"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="85dp"
+        android:text="Profile Setting"
+        android:textColor="#3F51B5"
+        android:textColorHint="#3f51b5"
+        android:textSize="30sp"
+        android:typeface="monospace" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/profileSettingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/logo_bl"
+        android:onClick="handleImageClick"
+        app:civ_border_color="#3F51B5"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:textSize="10pt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Name"
+        android:textColor="@color/colorAbu" />
+
+    <EditText
+        android:id="@+id/currentNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAbu" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentNameEditText"
+        android:textSize="10pt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Phone Number"
+        android:textColor="@color/colorAbu" />
+
+    <EditText
+        android:id="@+id/currentPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="@color/colorAbu" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentPhoneEditText"
+        android:textSize="10pt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Email"
+        android:textColor="@color/colorAbu" />
+
+    <EditText
+        android:id="@+id/currentEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorAbu" />
+
+    <Button
+        android:id="@+id/changePasswordButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentEmailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/image_border"
+        android:fontFamily="sans-serif"
+        android:onClick="changePasswordClicked"
+        android:text="CHANGE PASSWORD"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changePasswordButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/red_button"
+        android:fontFamily="sans-serif"
+        android:onClick="logOut"
+        android:text="LOG OUT"
+        android:textColor="@color/colorRed"
+        android:typeface="monospace" />
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.TaskActivity">
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="?attr/colorPrimary"
+        android:onClick="homeClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/taskImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/homeImageView"
+        android:background="@color/colorPrimaryDark"
+        android:padding="25dp"
+        app:srcCompat="@drawable/status" />
+
+    <ImageView
+        android:id="@+id/helpImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/taskImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="helpClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/helpImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="profileClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/confirmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Order Confirmation"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12pt"/>
+
+    <ImageView
+        android:id="@+id/correctImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/confirmText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="107dp"
+        app:srcCompat="@mipmap/ic_correct"
+        />
+
+    <TextView
+        android:id="@+id/completeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order complete!"
+        android:layout_below="@id/correctImage"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/seeLaundryButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/completeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/image_border"
+        android:fontFamily="sans-serif"
+        android:onClick="orderCompleted"
+        android:text="SEE YOUR LAUNDRY"
+        android:textColor="@color/colorPrimary"
+        android:typeface="monospace" />
+
+
+</RelativeLayout>
+

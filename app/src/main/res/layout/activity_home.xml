@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.master.cuciin.HomeActivity">
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="?attr/colorPrimaryDark"
+        android:padding="25dp"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/taskImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/homeImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="taskClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/status" />
+
+    <ImageView
+        android:id="@+id/helpImageView"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/taskImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="helpClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/helpImageView"
+        android:background="@color/colorPrimary"
+        android:onClick="profileClicked"
+        android:padding="25dp"
+        app:srcCompat="@drawable/profile" />
+
+    <ImageButton
+        android:id="@+id/qcButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:src="?android:attr/windowBackground" />
+
+    <ImageView
+        android:id="@+id/qcImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ltButton"
+        android:layout_alignStart="@+id/qcButton"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="24dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/quick_clean" />
+
+    <TextView
+        android:id="@+id/qcTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/qcImageView"
+        android:layout_alignEnd="@+id/qcImageView"
+        android:layout_marginEnd="6dp"
+        android:text="Quick Cleaning"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/dcButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/qcButton"
+        android:layout_marginRight="20dp"
+        android:src="?android:attr/windowBackground" />
+
+    <ImageView
+        android:id="@+id/dcImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dcTextView"
+        android:layout_alignEnd="@+id/dcButton"
+        android:layout_marginEnd="17dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/deep_clean" />
+
+    <TextView
+        android:id="@+id/dcTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/qcImageView"
+        android:layout_alignStart="@+id/dcImageView"
+        android:layout_marginStart="6dp"
+        android:text="Deep Cleaning"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/ltButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignStart="@+id/qcButton"
+        android:layout_below="@+id/qcButton"
+        android:layout_marginTop="16dp"
+        android:src="?android:attr/windowBackground" />
+
+    <ImageView
+        android:id="@+id/ltImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ltButton"
+        android:layout_alignStart="@+id/qcImageView"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/leather" />
+
+    <TextView
+        android:id="@+id/ltTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ltImageView"
+        android:layout_alignStart="@+id/ltImageView"
+        android:layout_marginBottom="10dp"
+        android:text="Leather Treatment"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="17sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/uyButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignStart="@+id/dcButton"
+        android:layout_alignTop="@+id/ltButton"
+        android:src="?android:attr/windowBackground" />
+
+    <ImageView
+        android:id="@+id/uyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dcImageView"
+        android:layout_alignTop="@+id/ltImageView"
+        android:layout_marginEnd="6dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/unyellow" />
+
+    <TextView
+        android:id="@+id/uyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ltTextView"
+        android:layout_alignBottom="@+id/ltTextView"
+        android:layout_alignStart="@+id/dcTextView"
+        android:layout_marginStart="8dp"
+        android:text="Unyellowing"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/rpButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignStart="@+id/ltButton"
+        android:layout_below="@+id/ltButton"
+        android:layout_marginTop="19dp"
+        android:src="?android:attr/windowBackground" />
+
+    <ImageView
+        android:id="@+id/rpImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ltImageView"
+        android:layout_alignTop="@+id/rpButton"
+        android:layout_marginTop="14dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/repaint" />
+
+    <TextView
+        android:id="@+id/rpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rpImageView"
+        android:layout_alignStart="@+id/qcTextView"
+        android:layout_marginStart="25dp"
+        android:text="Repaint"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <ImageButton
+        android:id="@+id/rmButton"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignStart="@+id/uyButton"
+        android:layout_alignTop="@+id/rpButton"
+        android:src="?android:attr/windowBackground" />
+
+    <ImageView
+        android:id="@+id/rmImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/uyImageView"
+        android:layout_alignTop="@+id/rpImageView"
+        android:paddingBottom="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/midsole" />
+
+    <TextView
+        android:id="@+id/rmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rpTextView"
+        android:layout_alignBottom="@+id/rpTextView"
+        android:layout_alignStart="@+id/dcImageView"
+        android:text="Repaint Midsole"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp"
+        android:typeface="monospace" />
+
+    <!--<ImageView
+        android:id="@+id/checkoutImageView"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/homeImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/image_border"
+        android:src="?android:attr/windowBackground" />
+
+    <TextView
+        android:id="@+id/checkoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/homeImageView"
+        android:layout_alignStart="@+id/rpTextView"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="18dp"
+        android:text="PROCEED TO CHECK OUT >"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />-->
+
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/homeImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/image_border"
+        android:fontFamily="sans-serif"
+
+        android:onClick="checkOut"
+        android:text="P R O C E E D  T O  C H E C K  O U T    > >"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="16dp"
+        android:typeface="monospace" />
+
+</RelativeLayout>
